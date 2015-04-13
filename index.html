@@ -1,10 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
 <body>
+
 <h1>Project Status</h1>
 I started coding of my character with a pre-refined walk cycle. I wanted to test some code to see how far I could get. So far I have just used a key up and down handler to get the character walking from left to right. The key down handlers are assigned to the left arrow key to move left and right arrow key to walk right. The up handler allows the character to stop an whatever frame it is currently playing when either key is released. I have the character stopping on the frame as I have not animated a turning cycle to play when he comes to a stop. I didn't run into any issues while coding the keyboard events but some issues did occur when converting the animation to a symbol. At first when i lifted the key the character would reset back to the center of the stage and give an error.I got the same error when the character reached the end of the stage. In the end i copied all the frames and the character on to a new file with a blank stage and converted it to a symbol, this fixed the issues i had with the errors.
 
 
 <object width="1024" height="576" data="walking.swf" alt="swf file"> </object>
+
+
+<h1>Status Update 2</h1>
+
+Since last time I have replaced my walk cycle with an improved one. After a few attempts I’ve also gotten the two sets of frames containing the walk cycle and a frame with my character standing still which I can call upon at any time. Along with this I’ve added a collision detection with a ball as a place holder where the ball moves up and to the left when the character makes contact with it. It also prints out the word hit when contact is made. I’ve added a border to the left and right so my character cannot leave the stage. He does however continue the walking animation so all I need to do is add in the background and the illusion of movement will still be there. I have attempted to get the multi key function working (holding up and left simultaneously) but have not gotten the result I wanted. I have chosen to use an animated jump cycle rather than using gravity and velocity.
+
+
+
+<object width="1024" height="576" data="walking_status6_external_code" alt="swf file"> </object>
+
+
 </body>
 </html>
