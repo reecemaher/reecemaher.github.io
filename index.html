@@ -4,102 +4,7 @@
 <meta charset="utf-8">
 <title>Home</title>
 
-<script src="js/jquery-1.12.0.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"</script>
-<script src="js/isotope.pkgd.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-75895980-1', 'auto');
-  ga('send', 'pageview');
-
-</script>    
-   
-<!--<script src="js/jquery.smint.js"></script>-->
-   
-<link rel="stylesheet" type="text/css" href="css/reece_maher_pen_and_pixel_website.css">  
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">    
-   
-    
-    <script>
-   
-        $("document").ready(function(){
-            
-              $("a[rel^='prettyPhoto']").prettyPhoto();
-            
-           
-            
-            $("#fadeIn")
-                .animate({width:"100%"})  
-                .animate({height:"100vh"})
-            
-           // $("#title").slideDown("slow",100);
-             // $("#title").animate({
-               // height:"50px",
-              // width:"500px",
-                
-         //  }
-             //   ,"slow");   
-                
-            });
-            
-          
-        
-        $(function() {
-        $(".innerNav a").hover(hover);    
-    });
-        
-        function hover() {
-        //$(this).fadeTo("fast", 0.5);    
-        $(this).toggleClass("hovered");
-    }
-        
-        $(window).load(function(){
-            var $container = $(".galleryContainer");
-            $container.isotope({
-                filter:"*",
-                aniamtionOptions:{
-                    duration:750,
-                    easing:"linear",
-                    queue: false
-                }
-            });
-            
-        $(".galleryFilter button").click(function(){
-            $(".galleryFilter .current").removeClass("current");
-                $(this).addClass("current");
-                
-                var selector = $(this).attr("data-filter");
-                $container.isotope({
-                    filter:selector,
-                    aniamtionOptions:{
-                        duration:750,
-                        easing: "linear",
-                        queue:false
-                    }
-                
-            });
-            return false;
-        }); 
-            
-             /* $('.subMenu').smint({
-    	'scrollSpeed' : 1000
-    });*/
-            
-           
-       
-            
-                
-            });
-    
-    
-    </script>
 </head>
 
     
@@ -114,10 +19,7 @@
            </div>
            
            
-           
-           
-           
-            
+             
        </div>
     
     </div> 
@@ -926,6 +828,102 @@ The programme provides advanced modules in both the creative and technical proce
         
         
         </div>
+        <script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"</script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75895980-1', 'auto');
+  ga('send', 'pageview');
+
+</script>    
+   
+<!--<script src="js/jquery.smint.js"></script>-->
+   
+<link rel="stylesheet" type="text/css" href="css/reece_maher_pen_and_pixel_website.css">  
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">    
+   
+    
+    <script>
+   
+        $("document").ready(function(){
+            
+              $("a[rel^='prettyPhoto']").prettyPhoto();
+            
+           
+            
+            $("#fadeIn")
+                .animate({width:"100%"})  
+                .animate({height:"100vh"})
+            
+           // $("#title").slideDown("slow",100);
+             // $("#title").animate({
+               // height:"50px",
+              // width:"500px",
+                
+         //  }
+             //   ,"slow");   
+                
+            });
+            
+          
+        
+        $(function() {
+        $(".innerNav a").hover(hover);    
+    });
+        
+        function hover() {
+        //$(this).fadeTo("fast", 0.5);    
+        $(this).toggleClass("hovered");
+    }
+        
+        $(window).load(function(){
+            var $container = $(".galleryContainer");
+            $container.isotope({
+                filter:"*",
+                aniamtionOptions:{
+                    duration:750,
+                    easing:"linear",
+                    queue: false
+                }
+            });
+            
+        $(".galleryFilter button").click(function(){
+            $(".galleryFilter .current").removeClass("current");
+                $(this).addClass("current");
+                
+                var selector = $(this).attr("data-filter");
+                $container.isotope({
+                    filter:selector,
+                    aniamtionOptions:{
+                        duration:750,
+                        easing: "linear",
+                        queue:false
+                    }
+                
+            });
+            return false;
+        }); 
+            
+             /* $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });*/
+            
+           
+       
+            
+                
+            });
+    
+    
+    </script>
 </body>    
     
     
