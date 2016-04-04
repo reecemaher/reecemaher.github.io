@@ -9,13 +9,13 @@
 <script src="js/isotope.pkgd.min.js"</script>
 <script src="js/isotope.pkgd.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/owl.carousel.js"></script>    
+   
 <!--<script src="js/jquery.smint.js"></script>-->
    
 <link rel="stylesheet" type="text/css" href="css/reece_maher_pen_and_pixel_website.css">  
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">    
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">    
+   
     
     <script>
    
@@ -23,15 +23,19 @@
             
               $("a[rel^='prettyPhoto']").prettyPhoto();
             
-            //$("#title").animate({
-              //  height:"50px",
-              //  width:"500px"
-          //  }
-              //  ,"slow");
+           
             
             $("#fadeIn")
                 .animate({width:"100%"})  
                 .animate({height:"100vh"})
+            
+            $("#title").slideDown("slow",100);
+              $("#title").animate({
+                height:"50px",
+                width:"500px",
+                
+           }
+                ,"slow");   
                 
             });
             
@@ -78,14 +82,7 @@
     	'scrollSpeed' : 1000
     });*/
             
-             $("#gamesCar").owlCarousel({
- 
-        margin:10,
-    loop:true,
-    autoWidth:false,
-    items:2
- 
-  });
+           
        
             
                 
@@ -101,7 +98,18 @@
    <div class="landingPage">
     
        <div id="fadeIn">
-        <h1 id="title"> Pen & Pixel 2016</h1>
+           
+           <div class="animated">
+           <img src="images/p_and_p_bg.jpg">
+           </div>
+           
+           <div class=title>
+                <h1 id="title"> Pen & Pixel 2016</h1>
+           </div>
+           
+           
+           
+            
        </div>
     
     </div> 
@@ -125,58 +133,19 @@
         <div class="section1" id="s1">
 		<div class="inner ">
 			<h1>Home</h1>
+            <div>
+                Pen and Pixel is Clonmel LIT's end of year art showcase. Work is taking from first to fourth years of our three courses Creative Multimedia, Digital Animation Production and Game Art Design.
+            
+            </div>
+            
 		</div>
 	</div>
-        
-        
-        <div class="section3" id="s3">
-		<div class="inner">
-            <h1>About</h1>
-            
-            <div id="creative multimedia">
-            <h2> Creative Multimedia</h2>
-            What is the programme about?
-                The programme is designed to provide you with knowledge and skills in digital media, design and technology. This includes the design and development of interactive systems, the production of high quality digital media content and the application of digital media in the promotion of products and services. You will be introduced to a range of areas that reflect established and emerging industry best practice including graphic design, digital audio and video production, motion graphics, 2D and 3D digital animation, digital media technology, web and mobile application development, casual game development, social media, marketing and communications. An integral part of the programme is the industrial placement module in year 3 where learners are provided with the opportunity to work with an external organisation for three months.
-            
-            </div>
-            
-            <div id="DAP">
-                <h2> Digital Animation Productions</h2>
-                
-                What is the programme about?
-
-                The convergence of the technology, media and games industries has created the need for a new type of graduate who possesses a unique blend of artistic and technological skills. In this programme, you will learn how to create, design and develop 2D & 3D animation that meets the needs of a range of sectors in the creative industries. In addition to developing your artistic ability, you will acquire the necessary knowledge and skills to produce a range of digital media assets and the ability to publish these in a wide variety of formats. The programme provides advanced modules in both the creative and technical processes involved in producing computer-generated animation.
-            </div>
-            
-            <div id="GAD">
-                <h2>Game Art and Design</h2>
-                
-                What is the programme about?
-
-The continued growth and success of the games industry both nationally and internationally has created the need for creative graduates who possess a unique blend of artistic and technological skills. 
-
-On the B.Sc (Honours) in Game Art and Design, you will learn how to create and develop high quality game content, design game levels and work with industry leading content creations tools, scripting languages and games engines. 
-
-In addition to developing your artistic ability, you will acquire the knowledge and skills to produce game content for various gaming applications and platforms.
-
-The programme provides advanced modules in both the creative and technical processes involved in producing game content and will also provide you with a foundation in the business and management of game projects.
-            
-            
-            
-            </div>
-		</div>
-	</div>
+     
 
 	<div class="section2" id="s2">
 		<div class="inner">
 			<a href="reece_maher_pen_and_pixel_website_gallery.html"><h1>Gallery</h1></a>
-            <!--<div id="gamesCar">
-                <div class="item"><a href="submissions/0.jpg" rel="prettyPhoto[pp_gal]" title="Tucan"><img src="submissions/0.jpg"/> </a></div>
-                <div class="item"><a href="submissions/1.jpg" rel="prettyPhoto[pp_gal]" title="Tucan"><img src="submissions/1.jpg"/> </a></div>
-                <div class="item"><a href="submissions/0.jpg" rel="prettyPhoto[pp_gal]" title="Tucan"><img src="submissions/0.jpg"/> </a></div>
-                <div class="item"><a href="submissions/0.jpg" rel="prettyPhoto[pp_gal]" title="Tucan"><img src="submissions/0.jpg"/> </a></div>
             
-            </div>-->
             
             <div class="galleryFilter">
     
@@ -194,6 +163,14 @@ The programme provides advanced modules in both the creative and technical proce
         
         <div class="games">
                 <a href="submissions/swfs/16.swf?width=800&height=450" rel="prettyPhoto[flash]" title="actionscript game"><img src="submissions/16.jpg"</a>
+            </div>
+            
+            <div class="videos">
+                <a href="https://www.youtube.com/watch?v=X_nK81DoxyI" rel="prettyPhoto" title="youtube"><img src="submissions/16.jpg"</a>
+            </div>
+                
+                 <div class="videos">
+                <a href="https://vimeo.com/68362970" rel="prettyPhoto" title="vimeo"><img src="submissions/16.jpg"</a>
             </div>
         
         <div class="games">
@@ -237,7 +214,7 @@ The programme provides advanced modules in both the creative and technical proce
         </div>
         
         <div class="sound && video">
-            <a href="submissions/10.jpg" rel="prettyPhoto[pp_gal]" title="Jungsters"><img src="submissions/10.jpg" ></a>
+            <a href="https://vimeo.com/68362970" rel="prettyPhoto" title="vimeo" title="Jungsters"><img src="submissions/10.jpg" ></a>
         </div>
         
         <div class="photography">
@@ -857,6 +834,47 @@ The programme provides advanced modules in both the creative and technical proce
         </div>
         
         
+           
+        
+        <div class="section3" id="s3">
+		<div class="inner">
+            <h1>About</h1>
+            
+            <div id="creative multimedia">
+            <h2> Creative Multimedia</h2>
+            What is the programme about?
+                The programme is designed to provide you with knowledge and skills in digital media, design and technology. This includes the design and development of interactive systems, the production of high quality digital media content and the application of digital media in the promotion of products and services. You will be introduced to a range of areas that reflect established and emerging industry best practice including graphic design, digital audio and video production, motion graphics, 2D and 3D digital animation, digital media technology, web and mobile application development, casual game development, social media, marketing and communications. An integral part of the programme is the industrial placement module in year 3 where learners are provided with the opportunity to work with an external organisation for three months.
+            
+            </div>
+            
+            <div id="DAP">
+                <h2> Digital Animation Productions</h2>
+                
+                What is the programme about?
+
+                The convergence of the technology, media and games industries has created the need for a new type of graduate who possesses a unique blend of artistic and technological skills. In this programme, you will learn how to create, design and develop 2D & 3D animation that meets the needs of a range of sectors in the creative industries. In addition to developing your artistic ability, you will acquire the necessary knowledge and skills to produce a range of digital media assets and the ability to publish these in a wide variety of formats. The programme provides advanced modules in both the creative and technical processes involved in producing computer-generated animation.
+            </div>
+            
+            <div id="GAD">
+                <h2>Game Art and Design</h2>
+                
+                What is the programme about?
+
+The continued growth and success of the games industry both nationally and internationally has created the need for creative graduates who possess a unique blend of artistic and technological skills. 
+
+On the B.Sc (Honours) in Game Art and Design, you will learn how to create and develop high quality game content, design game levels and work with industry leading content creations tools, scripting languages and games engines. 
+
+In addition to developing your artistic ability, you will acquire the knowledge and skills to produce game content for various gaming applications and platforms.
+
+The programme provides advanced modules in both the creative and technical processes involved in producing game content and will also provide you with a foundation in the business and management of game projects.
+            
+            
+            
+            </div>
+		</div>
+	</div>
+        
+        
         
 
 	<div class="section4" id="s4">
@@ -864,7 +882,7 @@ The programme provides advanced modules in both the creative and technical proce
 			<h1>Campus</h1>
             
             <div id="gmap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9746.107933697242!2d-7.706095500000001!3d52.360863849999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1459250167087" width="80%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9746.107933697242!2d-7.706095500000001!3d52.360863849999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1459250167087" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
                 
 		</div>
@@ -879,6 +897,26 @@ The programme provides advanced modules in both the creative and technical proce
             </div>    
 		</div>
 	</div>
+        
+        <footer>
+            <div class="inner">
+                <div class="sponsers">
+                    
+                
+                
+                
+                </div>
+            
+            
+            </div>
+        
+        
+        
+        
+        
+        </footer>
+        
+        
         </div>
 </body>    
     
